@@ -12,7 +12,7 @@ public class weapon
     
 
 
-    public int attack()
+    public int GetDamage()
     {
         return generator.Next(minDamage, maxDamage);
     }
