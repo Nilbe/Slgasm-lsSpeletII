@@ -12,9 +12,9 @@ public class player
     public void attack(player target)
     {
         int damage = weapon.GetDamage();
-        target.HP = damage; 
+        target.HP -= damage; 
         target.HP = Math.Max(0, target.HP);
-        Console.WriteLine(name + " has done " + damage + " damage on opponent");
+        Console.WriteLine(name + " has done " + damage + " damage");
     }
 
 }
